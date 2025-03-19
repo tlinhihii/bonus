@@ -22,7 +22,7 @@ class MainWindowEx(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def setup_connections(self):
         # Liên kết các nút
-        self.ui.pushButtonChoose.clicked.connect(self.select_excel_file)  # Chọn file Excel
+        self.ui.pushButton.clicked.connect(self.select_excel_file)  # Chọn file Excel
         self.ui.pushButtonOpen.clicked.connect(self.open_chart_in_browser)  # Mở biểu đồ trong trình duyệt
         self.ui.pushButtonSave.clicked.connect(self.save_chart_to_html)  # Lưu biểu đồ dưới dạng HTML
         self.ui.lineEdit.textChanged.connect(self.update_button_state)
